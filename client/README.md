@@ -1,27 +1,38 @@
-# Task Collaboration Platform
+# Task Collaboration Platform 🚀
 
-A real-time task collaboration platform built as a Full Stack Internship assignment.
+A full-stack **Task Collaboration Platform** (Trello/Notion–style) built as part of a Full Stack Internship assignment.  
+It supports boards, lists, tasks, user assignment, authentication, and **real-time updates using Socket.io**.
 
-## Tech Stack
-- Frontend: React (Vite)
-- Backend: Node.js, Express
-- Database: MongoDB (Atlas)
-- Authentication: JWT
-- Real-time: Socket.io
+---
 
-## Features
-- User authentication (JWT)
-- Boards, Lists, and Tasks
-- Assign tasks to users
-- Real-time task assignment updates using WebSockets
+## 🔥 Features
 
-## Real-time Demo
-When a task is assigned, all connected clients instantly receive an update without refresh.
+- 🔐 JWT-based Authentication
+- 🗂️ Boards → Lists → Tasks structure
+- 👤 Assign users to tasks
+- ⚡ Real-time task assignment events (Socket.io)
+- 🧠 Role-based access (board members only)
+- 📡 REST APIs with Express & MongoDB
+- 🎨 React + Vite frontend
 
-## How to Run Locally
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React (Vite)
+- JavaScript
+- CSS
+- Socket.io-client
 
 ### Backend
-```bash
-cd server
-npm install
-npm run dev
+- Node.js
+- Express.js
+- MongoDB (Mongoose)
+- JWT Authentication
+- Socket.io
+
+---
+
+## 📁 Project Structure
+
