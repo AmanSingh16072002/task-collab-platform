@@ -35,4 +35,64 @@ It supports boards, lists, tasks, user assignment, authentication, and **real-ti
 ---
 
 ## 📁 Project Structure
+task-collab-platform/
+│
+├── client/ # Frontend (React + Vite)
+│ ├── src/
+│ │ ├── App.jsx
+│ │ ├── main.jsx
+│ │ ├── App.css
+│ │ └── index.css
+│ └── package.json
+│
+├── server/ # Backend (Node + Express)
+│ ├── src/
+│ │ ├── config/
+│ │ ├── middleware/
+│ │ ├── models/
+│ │ ├── routes/
+│ │ └── index.js
+│ ├── .env
+│ └── package.json
+│
+└── README.md
+
+---
+
+### 2️⃣ Setup Instructions (VERY important)
+
+
+```md
+## ⚙️ Setup Instructions
+
+### Prerequisites
+- Node.js (v18+ recommended)
+- MongoDB Atlas or local MongoDB
+- Git
+
+### Backend Setup
+
+cd server
+npm install
+npm run dev
+
+### Frontend Setup
+cd client
+npm install
+npm run dev
+
+🔗 API Overview
+
+- POST `/api/auth/register` – Register user
+- POST `/api/auth/login` – Login user
+- POST `/api/boards` – Create board
+- POST `/api/lists` – Create list
+- POST `/api/tasks` – Create task
+- PATCH `/api/tasks/:taskId/assign` – Assign user to task
+
+## ⚡ Real-Time Features
+
+- Uses Socket.io for real-time updates
+- When a task is assigned, all connected clients receive an instant event
+- Demonstrated via Live Events section in UI
 
